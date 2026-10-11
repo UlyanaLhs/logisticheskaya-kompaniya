@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shipment Tracking & Telematics | NEXORA LOGISTICS</title>
+  <meta name="description" content="Track international freight shipments in real time. Milestone checkpoints, customs clearance verification, and telematics status.">
+  <meta name="keywords" content="shipment tracking, cargo tracking, freight status, container tracking, airwaybill tracking">
+  
+  <meta property="og:title" content="Shipment Tracking & Visibility | NEXORA LOGISTICS">
+  <meta property="og:description" content="Enter your NEXORA reference number to review verified transit milestones, customs status, and estimated hub delivery.">
+  <meta property="og:image" content="./assets/images/service-supplychain.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="./index.html" class="brand-logo" aria-label="NEXORA LOGISTICS Homepage">
+        <img src="./assets/images/logo.svg" alt="NEXORA LOGISTICS" width="220" height="48">
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="./index.html" class="nav-link">Home</a></li>
+          <li><a href="./services.html" class="nav-link">Services</a></li>
+          <li><a href="./industries.html" class="nav-link">Industries</a></li>
+          <li><a href="./solutions.html" class="nav-link">Solutions</a></li>
+          <li><a href="./about.html" class="nav-link">About</a></li>
+          <li><a href="./tracking.html" class="nav-link active">Tracking</a></li>
+          <li><a href="./contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="./quote.html" class="btn btn-primary btn-sm">Request a Quote</a>
+        </div>
+      </nav>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section section-sm" style="background: linear-gradient(180deg, var(--color-surface-1) 0%, var(--color-bg-base) 100%); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container fade-in-up">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:12px;">
+          <span class="eyebrow">Freight Telematics & Visibility</span>
+          <span class="demo-badge">Interactive Tracking Demonstration</span>
+        </div>
+        <h1 class="hero-title" style="font-size: clamp(2rem, 4vw, 3.25rem); margin-bottom: 16px;">
+          Shipment Tracking Portal
+        </h1>
+        <p class="section-subtitle" style="max-width: 720px;">
+          Inspect verified milestone transitions, carrier handoffs, customs documentation clearances, and estimated hub arrivals.
+        </p>
+      </div>
+    </section>
+
+    <!-- Tracking Search Form Section -->
+    <section class="section" aria-label="Tracking Search">
+      <div class="container" style="max-width: 880px;">
+        
+        <div class="card fade-in-up" style="border-color: var(--border-medium); background: var(--color-surface-card); margin-bottom: var(--space-8);">
+          <form id="tracking-lookup-form" role="search">
+            <label for="tracking-number-input" class="form-label" style="font-size: 15px; margin-bottom: 8px;">
+              Enter Shipment Reference or Tracking ID:
+            </label>
+            
+            <div class="tracking-input-group">
+              <input 
+                type="text" 
+                id="tracking-number-input" 
+                class="input-text" 
+                placeholder="e.g. NEX-849201" 
+                value="NEX-849201"
+                autocomplete="off"
+                aria-describedby="sample-numbers-help"
+              >
+              <button type="submit" class="btn btn-primary" style="padding: 12px 28px;">
+                Track Cargo →
+              </button>
+            </div>
+
+            <!-- Sample Reference Pills for testing -->
+            <div id="sample-numbers-help" style="margin-top: 14px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+              <span style="font-size:12px; color:var(--text-muted);">Quick Demo Records:</span>
+              <button type="button" class="sample-ref-pill suggestion-pill" data-code="NEX-849201">NEX-849201 (Ocean/Rail)</button>
+              <button type="button" class="sample-ref-pill suggestion-pill" data-code="NEX-104928">NEX-104928 (Air Priority)</button>
+              <button type="button" class="sample-ref-pill suggestion-pill" data-code="NEX-552190">NEX-552190 (Road FTL)</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Demonstration Mode Disclaimer Banner -->
+        <div class="fade-in-up" style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.25); border-radius: var(--radius-md); padding: 14px 18px; margin-bottom: var(--space-8); display:flex; align-items:flex-start; gap:12px;">
+          <div style="color: #FBBF24; margin-top:2px;">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div style="font-size: 13px; color: #FCD34D; line-height: 1.5;">
+            <strong>Demonstration Status:</strong> This tracking console is operating in demo mode with pre-configured illustrative records. Real-time GPS locations and official carrier time-stamps connect via secure server-side API webhooks (e.g. Project44, FourKites, or EDI 214) without client-side credentials.
+          </div>
+        </div>
+
+        <!-- Dynamic Results Container -->
+        <div id="tracking-results-area" class="fade-in-up">
+          <!-- Populated by assets/js/tracking.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Developer / Architecture Integration Guide -->
+    <section class="section section-alt" aria-labelledby="integration-heading">
+      <div class="container" style="max-width: 880px;">
+        <div class="section-header fade-in-up">
+          <span class="eyebrow">Enterprise Telematics Architecture</span>
+          <h2 id="integration-heading" class="section-title">Connecting Live Telematics & Carriers</h2>
+          <p class="section-subtitle">
+            How NEXORA connects with production freight management platforms and transportation management systems (TMS).
+          </p>
+        </div>
+
+        <div class="grid-2 fade-in-up">
+          <div class="card">
+            <h3 style="font-size:16px; color:#FFF; margin-bottom:8px;">1. Carrier Aggregator Feeds</h3>
+            <p style="font-size:13px; color:var(--text-muted); line-height:1.6;">
+              Connect multi-carrier visibility providers like Project44, FourKites, or Shippeo. The backend normalizes AIS vessel data, ELD truck telematics, and airline flight numbers into unified REST endpoints.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 style="font-size:16px; color:#FFF; margin-bottom:8px;">2. EDI 214 & Webhook Events</h3>
+            <p style="font-size:13px; color:var(--text-muted); line-height:1.6;">
+              Support traditional ANSI X12 EDI 214 (Transportation Carrier Shipment Status Message) and modern JSON webhook triggers dispatched whenever a container gate-in or terminal departure is logged.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="./assets/images/logo.svg" alt="NEXORA LOGISTICS" width="200" height="44">
+          <p>Enterprise freight forwarding, multimodal transportation coordination, and supply chain solutions built for global commerce.</p>
+          <div style="margin-top: 14px;"><span class="demo-badge">Operational Demonstration Site</span></div>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="./services.html#road" class="footer-link">Road Freight (FTL/LTL)</a></li>
+            <li><a href="./services.html#air" class="footer-link">Air Cargo Priority</a></li>
+            <li><a href="./services.html#ocean" class="footer-link">Ocean Freight (FCL/LCL)</a></li>
+            <li><a href="./services.html#rail" class="footer-link">Rail & Intermodal</a></li>
+            <li><a href="./services.html#warehousing" class="footer-link">Warehousing & Hubs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Industries</h4>
+          <ul class="footer-links">
+            <li><a href="./industries.html#manufacturing" class="footer-link">Manufacturing</a></li>
+            <li><a href="./industries.html#automotive" class="footer-link">Automotive</a></li>
+            <li><a href="./industries.html#technology" class="footer-link">Technology</a></li>
+            <li><a href="./industries.html#retail" class="footer-link">Retail & E-Com</a></li>
+            <li><a href="./industries.html#healthcare" class="footer-link">Healthcare</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="./about.html" class="footer-link">About NEXORA</a></li>
+            <li><a href="./solutions.html" class="footer-link">Supply Chain Solutions</a></li>
+            <li><a href="./tracking.html" class="footer-link">Shipment Tracking</a></li>
+            <li><a href="./contact.html" class="footer-link">Contact & Locations</a></li>
+            <li><a href="./privacy.html" class="footer-link">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Dispatch Desk</h4>
+          <p style="font-size:13px; color:var(--text-muted); line-height:1.6; margin-bottom:12px;">
+            Headquarters Operations Desk<br>
+            Phone: +31 (0) 10 592 0180 (Sample)<br>
+            Email: dispatch@nexora-logistics.demo
+          </p>
+          <a href="./quote.html" class="btn btn-outline btn-sm" style="width:100%;">Online Quote Request</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 NEXORA LOGISTICS. All rights reserved. Demonstration interface for enterprise evaluation.</div>
+        <div class="footer-legal-links">
+          <a href="./privacy.html" class="footer-link">Privacy Policy</a>
+          <a href="./contact.html" class="footer-link">Operational Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/tracking.js"></script>
+  <script src="./assets/js/assistant.js"></script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Freight Quote | NEXORA LOGISTICS</title>
+  <meta name="description" content="Request an international freight quotation for Road, Air, Ocean, Rail, or Multimodal cargo. Fast review by our logistics specialists.">
+  <meta name="keywords" content="freight quote, logistics quote, cargo pricing, international shipping estimate, freight rate request">
+  
+  <meta property="og:title" content="Request a Freight Quotation | NEXORA LOGISTICS">
+  <meta property="og:description" content="Submit your origin, destination, cargo specifications, and timeline for an operational route and capacity analysis.">
+  <meta property="og:image" content="./assets/images/hero-truck.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="./index.html" class="brand-logo" aria-label="NEXORA LOGISTICS Homepage">
+        <img src="./assets/images/logo.svg" alt="NEXORA LOGISTICS" width="220" height="48">
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="./index.html" class="nav-link">Home</a></li>
+          <li><a href="./services.html" class="nav-link">Services</a></li>
+          <li><a href="./industries.html" class="nav-link">Industries</a></li>
+          <li><a href="./solutions.html" class="nav-link">Solutions</a></li>
+          <li><a href="./about.html" class="nav-link">About</a></li>
+          <li><a href="./tracking.html" class="nav-link">Tracking</a></li>
+          <li><a href="./contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="./quote.html" class="btn btn-primary btn-sm active">Request a Quote</a>
+        </div>
+      </nav>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section section-sm" style="background: linear-gradient(180deg, var(--color-surface-1) 0%, var(--color-bg-base) 100%); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container fade-in-up">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:12px;">
+          <span class="eyebrow">Freight Quotation Desk</span>
+          <span class="demo-badge">Interactive Demo Mode</span>
+        </div>
+        <h1 class="hero-title" style="font-size: clamp(2rem, 4vw, 3.25rem); margin-bottom: 16px;">
+          Request a Transportation Quote
+        </h1>
+        <p class="section-subtitle" style="max-width: 720px;">
+          Provide your shipment details below. Our routing specialists review freight volume, carrier capacity, and transit deadlines to structure an optimal quotation.
+        </p>
+      </div>
+    </section>
+
+    <!-- Quotation Form Container -->
+    <section class="section" aria-label="Quotation Form">
+      <div class="container" style="max-width: 900px;">
+        
+        <form id="freight-quote-form" class="card fade-in-up" style="border-color: var(--border-medium); padding: clamp(20px, 4vw, 40px);" novalidate>
+          
+          <!-- Mode Selection -->
+          <div style="margin-bottom: var(--space-8);">
+            <label class="form-label" style="font-size: 15px; margin-bottom: 12px;">
+              <span>Select Primary Transportation Mode <span class="required">*</span></span>
+              <span style="font-size: 12px; color: var(--text-muted); font-weight: normal;">Choose best fit or ask for guidance</span>
+            </label>
+            
+            <div class="mode-selector">
+              <label class="mode-option">
+                <input type="radio" name="transport_mode" value="road" checked>
+                <div class="mode-card">
+                  <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/></svg>
+                  <span>Road Freight</span>
+                </div>
+              </label>
+
+              <label class="mode-option">
+                <input type="radio" name="transport_mode" value="air">
+                <div class="mode-card">
+                  <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+                  <span>Air Cargo</span>
+                </div>
+              </label>
+
+              <label class="mode-option">
+                <input type="radio" name="transport_mode" value="ocean">
+                <div class="mode-card">
+                  <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+                  <span>Ocean Freight</span>
+                </div>
+              </label>
+
+              <label class="mode-option">
+                <input type="radio" name="transport_mode" value="rail">
+                <div class="mode-card">
+                  <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+                  <span>Rail Corridor</span>
+                </div>
+              </label>
+
+              <label class="mode-option">
+                <input type="radio" name="transport_mode" value="multimodal">
+                <div class="mode-card">
+                  <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+                  <span>Multimodal</span>
+                </div>
+              </label>
+
+              <label class="mode-option">
+                <input type="radio" name="transport_mode" value="not_sure">
+                <div class="mode-card">
+                  <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>Not Sure Yet</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Section 1: Route Details -->
+          <div style="border-top: 1px solid var(--border-subtle); padding-top: var(--space-6); margin-bottom: var(--space-8);">
+            <h2 style="font-size: 18px; color: #FFF; margin-bottom: var(--space-4); display:flex; align-items:center; gap:8px;">
+              <span class="step-number" style="width:24px;height:24px;font-size:12px;margin:0;">1</span>
+              Routing & Schedule
+            </h2>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="origin_location" class="form-label">Origin City, Country, or Postal Code <span class="required">*</span></label>
+                <input type="text" id="origin_location" name="origin_location" class="form-control" placeholder="e.g. Rotterdam, Netherlands or Port of Shanghai" required>
+                <span class="form-error-msg">Please specify the shipment origin.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="dest_location" class="form-label">Destination City, Country, or Postal Code <span class="required">*</span></label>
+                <input type="text" id="dest_location" name="dest_location" class="form-control" placeholder="e.g. Frankfurt, Germany or Chicago, IL" required>
+                <span class="form-error-msg">Please specify the shipment destination.</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="ready_date" class="form-label">Target Ready / Pickup Date</label>
+                <input type="date" id="ready_date" name="ready_date" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="delivery_deadline" class="form-label">Preferred Delivery Deadline (Optional)</label>
+                <input type="date" id="delivery_deadline" name="delivery_deadline" class="form-control">
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: Cargo Specifications -->
+          <div id="volume-calc" style="border-top: 1px solid var(--border-subtle); padding-top: var(--space-6); margin-bottom: var(--space-8); scroll-margin-top: 100px;">
+            <h2 style="font-size: 18px; color: #FFF; margin-bottom: var(--space-4); display:flex; align-items:center; gap:8px;">
+              <span class="step-number" style="width:24px;height:24px;font-size:12px;margin:0;">2</span>
+              Cargo Specifications & Dimensions
+            </h2>
+
+            <div class="form-group">
+              <label for="cargo_description" class="form-label">Commodity & Cargo Description <span class="required">*</span></label>
+              <input type="text" id="cargo_description" name="cargo_description" class="form-control" placeholder="e.g. Industrial machinery parts, electronics, retail clothing" required>
+              <span class="form-error-msg">Please provide a brief description of the cargo.</span>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cargo_weight" class="form-label">Total Estimated Gross Weight (kg)</label>
+                <input type="number" id="cargo_weight" name="cargo_weight" class="form-control" placeholder="e.g. 1500" min="1">
+              </div>
+
+              <div class="form-group">
+                <label for="cargo_pieces" class="form-label">Number of Pallets / Units / Cartons</label>
+                <input type="number" id="cargo_pieces" name="cargo_pieces" class="form-control" placeholder="e.g. 4" min="1" value="1">
+              </div>
+            </div>
+
+            <!-- Dimensions & Live Estimator -->
+            <div style="background: var(--color-surface-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 16px; margin-bottom: var(--space-4);">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 8px;">
+                <span style="font-size: 13px; font-weight:600; color: #FFF;">Dimensions per Piece (in Centimeters)</span>
+                <span style="font-size: 11px; color: var(--color-accent); font-family:var(--font-mono);">Live CBM Calculator</span>
+              </div>
+              
+              <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
+                <div>
+                  <input type="number" id="dim_length" name="dim_length" class="form-control" placeholder="Length (cm)" min="1">
+                </div>
+                <div>
+                  <input type="number" id="dim_width" name="dim_width" class="form-control" placeholder="Width (cm)" min="1">
+                </div>
+                <div>
+                  <input type="number" id="dim_height" name="dim_height" class="form-control" placeholder="Height (cm)" min="1">
+                </div>
+              </div>
+
+              <div id="volume_calc_output"></div>
+            </div>
+
+            <!-- Special Handling Tags -->
+            <div class="form-group">
+              <span class="form-label">Special Operational Considerations</span>
+              <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 6px;">
+                <label class="checkbox-group">
+                  <input type="checkbox" name="tag_stackable" value="yes">
+                  <span class="checkbox-label">Stackable Pallets</span>
+                </label>
+                <label class="checkbox-group">
+                  <input type="checkbox" name="tag_liftgate" value="yes">
+                  <span class="checkbox-label">Tail Lift / Liftgate Required</span>
+                </label>
+                <label class="checkbox-group">
+                  <input type="checkbox" name="tag_customs_help" value="yes">
+                  <span class="checkbox-label">Need Customs Document Assistance</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3: Company & Contact Information -->
+          <div style="border-top: 1px solid var(--border-subtle); padding-top: var(--space-6); margin-bottom: var(--space-8);">
+            <h2 style="font-size: 18px; color: #FFF; margin-bottom: var(--space-4); display:flex; align-items:center; gap:8px;">
+              <span class="step-number" style="width:24px;height:24px;font-size:12px;margin:0;">3</span>
+              Company & Contact Details
+            </h2>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="company_name" class="form-label">Company Name <span class="required">*</span></label>
+                <input type="text" id="company_name" name="company_name" class="form-control" placeholder="e.g. Apex Industrial Supplies B.V." required>
+                <span class="form-error-msg">Company name is required.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact_name" class="form-label">Contact Name <span class="required">*</span></label>
+                <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="e.g. Alex Henderson" required>
+                <span class="form-error-msg">Contact name is required.</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="business_email" class="form-label">Business Email Address <span class="required">*</span></label>
+                <input type="email" id="business_email" name="business_email" class="form-control" placeholder="alex@apexindustrial.com" required>
+                <span class="form-error-msg">Valid business email is required.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact_phone" class="form-label">Phone Number (Optional)</label>
+                <input type="tel" id="contact_phone" name="contact_phone" class="form-control" placeholder="+31 10 555 0192">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="additional_notes" class="form-label">Additional Instructions or Routing Constraints</label>
+              <textarea id="additional_notes" name="additional_notes" class="form-control" rows="3" placeholder="Specific delivery dock hours, customs declaration notes, or project cargo requirements..."></textarea>
+            </div>
+
+            <!-- Privacy Consent -->
+            <div class="checkbox-group" style="margin-top: 14px;">
+              <input type="checkbox" id="privacy_consent" name="privacy_consent" required>
+              <label for="privacy_consent" class="checkbox-label">
+                I understand that this quotation request is an operational estimate based on stated parameters and does not constitute a legally binding freight contract until confirmed by our dispatch team. I agree to the processing of business contact details in accordance with the <a href="./privacy.html" target="_blank" style="color:var(--color-accent); text-decoration:underline;">NEXORA Privacy Policy</a>. <span class="required">*</span>
+              </label>
+            </div>
+            <span class="form-error-msg" style="margin-top: 4px;">Please agree to the privacy statement to submit.</span>
+          </div>
+
+          <!-- Submit Buttons -->
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
+            <div style="font-size: 12px; color: var(--text-muted);">
+              *Demonstration System: Generates sample quote reference and local record.
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">
+              Submit Quotation Request →
+            </button>
+          </div>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="./assets/images/logo.svg" alt="NEXORA LOGISTICS" width="200" height="44">
+          <p>Enterprise freight forwarding, multimodal transportation coordination, and supply chain solutions built for global commerce.</p>
+          <div style="margin-top: 14px;"><span class="demo-badge">Operational Demonstration Site</span></div>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="./services.html#road" class="footer-link">Road Freight (FTL/LTL)</a></li>
+            <li><a href="./services.html#air" class="footer-link">Air Cargo Priority</a></li>
+            <li><a href="./services.html#ocean" class="footer-link">Ocean Freight (FCL/LCL)</a></li>
+            <li><a href="./services.html#rail" class="footer-link">Rail & Intermodal</a></li>
+            <li><a href="./services.html#warehousing" class="footer-link">Warehousing & Hubs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Industries</h4>
+          <ul class="footer-links">
+            <li><a href="./industries.html#manufacturing" class="footer-link">Manufacturing</a></li>
+            <li><a href="./industries.html#automotive" class="footer-link">Automotive</a></li>
+            <li><a href="./industries.html#technology" class="footer-link">Technology</a></li>
+            <li><a href="./industries.html#retail" class="footer-link">Retail & E-Com</a></li>
+            <li><a href="./industries.html#healthcare" class="footer-link">Healthcare</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="./about.html" class="footer-link">About NEXORA</a></li>
+            <li><a href="./solutions.html" class="footer-link">Supply Chain Solutions</a></li>
+            <li><a href="./tracking.html" class="footer-link">Shipment Tracking</a></li>
+            <li><a href="./contact.html" class="footer-link">Contact & Locations</a></li>
+            <li><a href="./privacy.html" class="footer-link">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Dispatch Desk</h4>
+          <p style="font-size:13px; color:var(--text-muted); line-height:1.6; margin-bottom:12px;">
+            Headquarters Operations Desk<br>
+            Phone: +31 (0) 10 592 0180 (Sample)<br>
+            Email: dispatch@nexora-logistics.demo
+          </p>
+          <a href="./quote.html" class="btn btn-outline btn-sm" style="width:100%;">Online Quote Request</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 NEXORA LOGISTICS. All rights reserved. Demonstration interface for enterprise evaluation.</div>
+        <div class="footer-legal-links">
+          <a href="./privacy.html" class="footer-link">Privacy Policy</a>
+          <a href="./contact.html" class="footer-link">Operational Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/quote.js"></script>
+  <script src="./assets/js/assistant.js"></script>
+</body>
+</html>

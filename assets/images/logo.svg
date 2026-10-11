@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" width="280" height="60" fill="none">
+  <!-- Brand Icon -->
+  <g transform="translate(4, 8)">
+    <rect width="44" height="44" rx="8" fill="#1C2B3B" stroke="#2878F0" stroke-width="1.5"/>
+    <path d="M12 32L22 14L32 32H25L22 22L19 32H12Z" fill="#2878F0"/>
+    <path d="M18 26L26 36H36L26 21L21 28.5" fill="#38BDF8" fill-opacity="0.85"/>
+    <circle cx="32" cy="16" r="3" fill="#2878F0"/>
+  </g>
+  
+  <!-- Brand Typography -->
+  <text x="60" y="33" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" letter-spacing="0.08em" fill="#FFFFFF">NEXORA</text>
+  <text x="60" y="47" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" letter-spacing="0.32em" fill="#38BDF8">LOGISTICS</text>
+</svg>
